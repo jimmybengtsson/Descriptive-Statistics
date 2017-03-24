@@ -89,4 +89,4 @@ Figur 2. Exempel på presentation.
 - Standardavvikelse, http://www.matteboken.se/lektioner/matte-2/statistik/standardavvikelse
 - Kanske ska du ta dig en titt på LINQ?
 - Vill du verkligen utmana dig själv kan du välja att implementera saknade aggregatsmetoder som så kallade utökningsmetoder (eng. "extension methods").
-- Du använder lämpligen klassen `JsonConver` för att tolka JSON-data. För att kunna använda `JsonConver` måste du lägga till paketet `NewtonSoft.Json`med `dotnet add package newtonsoft.json`.
+- Du använder lämpligen klassen `JsonConver` för att tolka JSON-data. För att kunna använda `JsonConvert` måste du lägga till paketet `NewtonSoft.Json`med `dotnet add package newtonsoft.json`.
