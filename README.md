@@ -1,4 +1,4 @@
-#<i class="fa fa-graduation-cap"></i> 1 - Skarp beskrivande statistik
+# <i class="fa fa-graduation-cap"></i> 1 - Skarp beskrivande statistik
 
 <ul class="fa-ul fa-border exercise-info">
 <li><i class="fa-li fa fa-star-o"></i>Examinationsuppgift 1</li>
