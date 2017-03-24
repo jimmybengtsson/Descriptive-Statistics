@@ -35,7 +35,7 @@ Figur 1. Klassdiagram över den statiska klassen <code>Statistics</code>.
 </figcaption>
 </figure>
 
-<p>Klassen ska ha statiska metoder för att bestämma maximum- och minimumvärden, variationsbredd ("_range_"), medelvärde ("_mean_"), median, standardavvikelse ("_standard deviation_") samt typvärde ("_mode_", som kan vara en samling med värden).</p>
+<p>Klassen ska ha statiska metoder för att bestämma maximum- och minimumvärden, variationsbredd ("range"), medelvärde ("mean"), median, standardavvikelse ("standard deviation") samt typvärde ("mode", som kan vara en samling med värden).</p>
 
 - De publika statiska metoderna ska implementeras enligt signaturerna i klassdiagrammet i figur 1.
 
