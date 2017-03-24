@@ -17,7 +17,7 @@
 
 I denna examinationsuppgift ska du skapa en konsolapplikation i C# vars syfte är att presentera beskrivande statistik över stora datamängder.
 
-Beskrivande statistik (eller *deskriptiv statistik*; eng. "*descriptive statistics*") är ett sätt att reducera stora datamängder för att presentera en sammanfattning av datamängden.
+Beskrivande statistik (eller _deskriptiv statistik_; eng. "_descriptive statistics_") är ett sätt att reducera stora datamängder för att presentera en sammanfattning av datamängden.
 
 ## <i class="fa fa-flag-o"></i> Uppgift
 
@@ -35,8 +35,7 @@ Figur 1. Klassdiagram över den statiska klassen <code>Statistics</code>.
 </figcaption>
 </figure>
 
-
-<p>Klassen ska ha statiska metoder för att bestämma maximum- och minimumvärden, variationsbredd (*range*), medelvärde ("*mean*"), median, standardavvikelse ("*standard deviation*") samt typvärde ("*mode*", som kan vara en samling med värden).</p>
+Klassen ska ha statiska metoder för att bestämma maximum- och minimumvärden, variationsbredd (_range_), medelvärde (_mean_), median, standardavvikelse (_standard deviation_) samt typvärde (_mode_, som kan vara en samling med värden).
 
 - De publika statiska metoderna ska implementeras enligt signaturerna i klassdiagrammet i figur 1.
 
