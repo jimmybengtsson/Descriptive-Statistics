@@ -1,0 +1,8 @@
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/bin/Debug/netcoreapp1.1/jb223pu-examination-1.deps.json
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/bin/Debug/netcoreapp1.1/jb223pu-examination-1.runtimeconfig.json
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/bin/Debug/netcoreapp1.1/jb223pu-examination-1.runtimeconfig.dev.json
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/bin/Debug/netcoreapp1.1/jb223pu-examination-1.dll
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/bin/Debug/netcoreapp1.1/jb223pu-examination-1.pdb
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/obj/Debug/netcoreapp1.1/jb223pu-examination-1.AssemblyInfo.cs
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/obj/Debug/netcoreapp1.1/jb223pu-examination-1.dll
+/Users/jimmybengtsson/Documents/Visual Studio Code/1DV024/jb223pu-examination-1/obj/Debug/netcoreapp1.1/jb223pu-examination-1.pdb
