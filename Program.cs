@@ -8,18 +8,26 @@ namespace jb223pu_examination_1
 {
     class Program
     {
+        class Statistics
+        {
         static void Main(string[] args)
         {
             var textFile = File.ReadAllText("data.json");
             var jsonArray = JsonConvert.DeserializeObject<int[]>(textFile);
             
-            Console.WriteLine(Maximum(jsonArray));
-            Console.WriteLine(Minimum(jsonArray));
-            Console.WriteLine(Mean(jsonArray));
-            Console.WriteLine(Median(jsonArray));
-            Console.WriteLine(Range(jsonArray));
-            Console.WriteLine(Mode(jsonArray));
-            Console.WriteLine(StandardDeviation(jsonArray));
+            Console.WriteLine(DescriptiveStatistics(jsonArray));
+        }
+
+        static dynamic DescriptiveStatistics(int[] source)
+        {
+            if (source == null)
+            {
+                return "Error";
+            }
+
+            string displayedResult = ($"Maximum: {Maximum(source)}\r\nMinimum: {Minimum(source)}\r\nMean: {Mean(source)}\r\nMedian: {Median(source)}\r\nMode: {Mode(source)}\r\nRange: {Range(source)}\r\nStandard deviation: {StandardDeviation(source)}");
+
+            return displayedResult;
         }
 
         static int Maximum(int[] source)
@@ -74,14 +82,16 @@ namespace jb223pu_examination_1
 
         static double StandardDeviation(int[] source)
             {
-                double average = source.Average();
-                double sumOfDerivation = 0;  
-                foreach (double value in source)  
-                {  
-                sumOfDerivation += (value) * (value);  
-                }  
-                double sumOfDerivationAverage = sumOfDerivation / (source.Count() - 1);  
-                return Math.Sqrt(sumOfDerivationAverage - (average*average));  
+            if (source.Count() < 2) return 0.0;
+            double sumOfSquares = 0.0;
+            double average = source.Average(); //.NET 3.0
+            foreach (double value in source) 
+            {
+                sumOfSquares += Math.Pow((value - average), 2);
             }
+            return Math.Sqrt(sumOfSquares / (source.Count()));
+            
+            }
+        }
     }
 }
