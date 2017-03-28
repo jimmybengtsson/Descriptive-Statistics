@@ -18,6 +18,8 @@ namespace jb223pu_examination_1
             Console.WriteLine(Mean(jsonArray));
             Console.WriteLine(Median(jsonArray));
             Console.WriteLine(Range(jsonArray));
+            Console.WriteLine(Mode(jsonArray));
+            Console.WriteLine(StandardDeviation(jsonArray));
         }
 
         static int Maximum(int[] source)
@@ -45,21 +47,41 @@ namespace jb223pu_examination_1
                 
                 
 
-                if (temp.Length % 2 == 0)
+                if (temp.Count() % 2 == 0)
                 {
-                    int a = temp[temp.Length / 2 -1];
-                    int b = temp[temp.Length / 2];
-                    return (a + b);
+                    int a = temp[temp.Count() / 2 -1];
+                    int b = temp[temp.Count() / 2];
+                    return (a + b) / 2;
                 }
                 else
                 {
-                    return temp[temp.Length / 2];
+                    return temp[temp.Count() / 2];
                 }
             }
 
         static int Range(int[] source)
             {
                 return source.Max() - source.Min();
+            }
+
+        static int Mode(int[] source)
+            {
+                return source.GroupBy(v => v)
+                                .OrderByDescending(g => g.Count())
+                                .First()
+                                .Key;
+            }
+
+        static double StandardDeviation(int[] source)
+            {
+                double average = source.Average();
+                double sumOfDerivation = 0;  
+                foreach (double value in source)  
+                {  
+                sumOfDerivation += (value) * (value);  
+                }  
+                double sumOfDerivationAverage = sumOfDerivation / (source.Count() - 1);  
+                return Math.Sqrt(sumOfDerivationAverage - (average*average));  
             }
     }
 }
