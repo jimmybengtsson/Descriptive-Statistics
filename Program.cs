@@ -3,7 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 
 
-namespace jb223pu_examination_1
+namespace Jb223puExamination1
 {
     class Program
     {

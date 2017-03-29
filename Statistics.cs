@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace jb223pu_examination_1
+namespace Jb223puExamination1
 {
     static class Statistics
     {
